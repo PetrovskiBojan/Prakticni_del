@@ -1,0 +1,29 @@
+[project]
+name = "prakticni-del"
+version = "0.1.0"
+description = "Prakticni del"
+authors = [
+    {name = "Bojan Petrovski",email = "bojan.petrovski@novum-rgi.si"}
+]
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "pydantic (>=2.11.4,<3.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "numpy (>=2.2.5,<3.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "dvc (>=3.59.2,<4.0.0)",
+    "evidently (>=0.7.5,<0.8.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+poethepoet = "^0.34.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
