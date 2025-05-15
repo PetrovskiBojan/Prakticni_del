@@ -8,3 +8,11 @@ stages:
     - data/processed/current_data.csv
   validate_data:
     cmd: \
+  train_model:
+    cmd: python src/models/train_eval.py data/processed/current_data.csv
+    deps:
+    - data/processed/your_dataset.csv
+    params:
+    - src/models/train_eval.py
+    outs:
+    - models/dropout_model.joblib
