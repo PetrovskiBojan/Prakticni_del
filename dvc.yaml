@@ -6,3 +6,5 @@ stages:
     - src/data/process_data.py
     outs:
     - data/processed/current_data.csv
+  validate_data:
+    cmd: \
